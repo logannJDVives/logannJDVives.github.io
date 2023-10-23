@@ -1,0 +1,14 @@
+h1, h2{
+    color: blue;
+
+}
+
+.styleBlue{
+    color:blue;
+    font-size: 4em;
+}
+
+section>span>h1{
+    color:green;
+    font-size: 5em;
+}
