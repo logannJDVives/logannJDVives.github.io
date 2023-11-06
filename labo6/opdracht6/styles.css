@@ -1,0 +1,21 @@
+ul.checklist {
+    list-style: none;
+    padding: 0;
+}
+
+ul.checklist li {
+    margin-bottom: 10px;
+}
+
+ul.checklist li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(afbeelding/empty_checkbox.png) no-repeat;
+    margin-right: 5px;
+}
+
+ul.checklist li.checked::before {
+    background: url(afbeelding/checked_checkbox.png) no-repeat;
+}

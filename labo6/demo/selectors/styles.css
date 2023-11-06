@@ -1,0 +1,26 @@
+body {
+    background-color: yellow;
+    font-size: 3em;
+}
+
+h1 {
+    font-size: 4em;
+    background-color: red;
+}
+
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+li>a:hover{
+    text-decoration: underline;
+}
+
+li:nth-child(2){
+    color: blue;
+}
