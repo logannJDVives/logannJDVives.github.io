@@ -1,0 +1,22 @@
+
+
+
+
+
+header h1 {
+    color: beige;
+}
+
+header.hoofd h1 {
+    color: grey;
+} /* 0012 */
+
+
+h1 {
+    color: red; /*0001*/
+}
+
+h1 {
+    color: blue;/*0001*/
+}
+

@@ -1,0 +1,38 @@
+body{
+    background-color: #EDF2F4;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_background {
+    height: 150px;
+    background-image: url(../images/header.jpg);
+    background-color: #FFFF;
+    background-size: cover;
+    color: white;
+    font-size: 150%;
+}
+
+nav {
+    background-color: #2B2D42;
+}
+
+
+
+.lime {
+    color: lime;
+    text-decoration: none;
+}
+
+article {
+    background-color: lightgray;
+    padding: 2em;
+    margin: 0.5em;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0px;
+}
+
