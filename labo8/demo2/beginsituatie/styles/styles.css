@@ -1,0 +1,84 @@
+body {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+}
+
+#wrapper {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+img{
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#box1 {
+    float: left;
+    width: 25%;
+    height: 200px;
+    background-color: white;
+}
+
+div#box2 {
+    float: left;
+    width: 75%;
+    height: 200px;
+    background-color: red;
+}
+
+div#box3{
+    float: left;
+    width: 100%;
+    height: 200px;
+    background-color: green;
+}
+
+nav {
+    float: left;
+    width: 20%;
+    background-color: white;
+    height: 200px;
+}
+
+section#midden {
+    float: left;
+    background-color: maroon;
+    width: 80%;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+footer{
+    clear: both;
+    text-align: center;
+    background-color: green;
+    height: 120px;
+}
+
+.breedte {
+    width: 500px;
+    background-color: green;
+    padding-right: 20px;
+    margin: 20px;
+    display: block;
+
+}
+
+nav a {
+    text-decoration: none;
+
+}
+
+nav li{
+    list-style: none;
+}
