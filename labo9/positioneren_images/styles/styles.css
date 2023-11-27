@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+#wrapper{
+    font-size: 1.25em;
+}
+
+main {
+    margin: 10px;
+}
+
+article {
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 1.25em;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.25em;
+}
+
+
+article:nth-child(even) img {
+    float: right;
+    padding: 10px;
+}
+
+article:nth-child(odd) img {
+    float: left;
+    padding: 10px;
+}
