@@ -1,0 +1,15 @@
+.hoogte {
+    height: 100px;
+}
+
+.lichtgrijs {
+    background-color: lightgray;
+}
+
+.donkergrijs {
+    background-color: darkgray;
+}
+
+.row > div {
+    margin-bottom: 1em; /* Voeg hier je gewenste margin toe */
+}
