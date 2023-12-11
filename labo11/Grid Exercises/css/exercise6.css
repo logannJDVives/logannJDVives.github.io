@@ -1,0 +1,81 @@
+
+
+body {
+    margin: 0;
+}
+
+.container{
+    background-color: white;
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.container .block{
+    padding: 20px;
+}
+
+@media screen and (min-width: 992px) {
+
+    .block.block1{
+        background-color: darkmagenta;
+        grid-area: 1/1/1/4;
+    }
+
+    .block.block2 {
+        background-color: darkblue;
+        grid-area: 2/1/2/4; /* begin rij, begin kolom, einde rij, einde kolom */
+    }
+    .block.block3{
+        background-color: blue;
+        grid-area: 3/1/3/2;
+    }
+    .block.block4{
+        background-color: lightblue;
+        grid-area: 3/2/3/4;
+    }
+    
+}
+
+@media screen and (min-width: 772px) and (max-width: 991px) {
+    .block.block1{
+        background-color: darkmagenta;
+        grid-area: 1/1/1/4;
+    }
+
+    .block.block2 {
+        background-color: darkblue;
+        grid-area: 3/1/3/4; /* begin rij, begin kolom, einde rij, einde kolom */
+    }
+    .block.block3{
+        background-color: blue;
+        grid-area: 2/1/2/4
+    }
+    .block.block4{
+        background-color: lightblue;
+        grid-area: 4/1/4/4;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width:771px) {
+    .block.block2{
+        background-color: darkblue;
+        grid-area: 1/1/1/4;
+    }
+
+    .block.block3 {
+        background-color: blue;
+        grid-area: 3/1/3/4; /* begin rij, begin kolom, einde rij, einde kolom */
+    }
+    .block.block1{
+        background-color: darkmagenta;
+        grid-area: 2/1/2/4
+    }
+    .block.block4{
+        background-color: lightblue;
+        grid-area: 4/1/4/4;
+    }
+}
+
