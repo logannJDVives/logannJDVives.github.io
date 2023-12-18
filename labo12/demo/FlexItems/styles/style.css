@@ -1,0 +1,13 @@
+.box{
+    font-size:15px;
+    padding:15px;
+}
+.box1{background:green; flex-grow: 1 ; flex-basis:150px; }
+.box2{background:blue; flex-grow:2; flex-basis:150px;}
+.box3{background:red; flex-shrink: 0; flex-basis:150px;}
+
+.container {
+    display: flex;
+    flex-grow: 2;
+
+}
