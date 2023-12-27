@@ -1,0 +1,27 @@
+body {
+    display: flex;
+}
+
+nav {
+    flex-basis: 20%;
+    background-color: blue;
+}
+
+article {
+    /*flex-basis: 80%; */
+    /*flex-basis: var(--widthNav); */
+    background: var(--nav);
+    flex-basis: calc(100% - var(--widthNav));
+}
+
+article, nav {
+    padding: 30px;
+    color: white;
+    box-sizing: border-box;
+}
+
+:root {
+    --nav: #1e90ff;
+    --article: #ff9000;
+    --widthNav: 20%;
+}
