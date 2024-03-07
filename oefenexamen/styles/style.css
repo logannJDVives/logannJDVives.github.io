@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: Helvetica, sans-serif;
+}
+.respimg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  border-bottom: 2px solid black;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+header {
+  margin: 0 auto;
+  width: 980px;
+}
+header img {
+  height: 50px;
+}
+.greyHr {
+  background-color: #ebe8e8;
+  height: 1px;
+  margin: 0;
+}
+nav {
+  margin: 0 auto;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  list-style-type: none;
+  padding: 10px 0;
+}
+nav li {
+  text-align: center;
+  padding: 10px 0;
+  border-right: 1px solid #ebe8e8;
+  text-transform: uppercase;
+}
+nav li:last-child {
+  border: none;
+}
+nav a {
+  text-decoration: none;
+  color: #5b4746;
+  font-size: 13px;
+}
+nav a:hover {
+  border-bottom: 2px solid #fff100;
+}
+.banner {
+  background-image:
+          url("../images/headerimage.jpg");
+  height: 350px; /* 500px (opgave) is te hoog,
+niet aantrekkelijk*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner span {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px #8D99AE;
+}
+#recipes {
+  margin: 0 auto;
+  width: 980px;
+}
+.grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+#recipes article {
+  margin-right: 1.5em;
+  padding-top: 1em;
+  border-top: 1px solid #ddd;
+}
+#recipes .category {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  color: #ff4d56;
+  display: block;
+}
+#recipes a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+#recipes .subtitle {
+  color: #666;
+  line-height: 2;
+  display: block;
+}
+#recipes .author {
+  padding-right: 10px;
+  border-right: 1px solid #ebe8e8;
+  font-style: italic;
+}
+#recipes .date {
+  color: #666;
+  padding-left: 10px;
+}
+#recommended {
+  width: 980px;
+  margin: 0 auto;
+  padding: 0;
+}
+#recommended img {
+  padding-bottom: 25px;
+}
+footer {
+  border-top: 1px solid #ebe8e8;
+}
+footer div {
+  width: 50%;
+  padding: 20px;
+  line-height: 2em;
+}
+footer #left {
+  float: left;
+  text-align: right;
+}
+footer #right {
+  float: right;
+  text-align: left;
+  color: white;
+  background-color: black;
+}
+@media screen and (max-width: 770px) {
+  header, #recipes, #recommended {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 770px) and
+(max-width: 1000px) {
+  header, #recipes, #recommended {
+    width: 750px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .banner span {
+    font-size: 5em;
+  }
+}

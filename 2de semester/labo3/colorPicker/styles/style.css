@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    display: grid;
+    height: 100%;
+    text-align: center;
+    place-items: center;
+}
+
+.picker {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 500px;
+    height: 180px;
+    float: left;
+}
+
+#display {
+    width: 30%;
+    height: 50%;
+    background: red;
+    float: right;
+    margin: 1em;
+    border-radius: 10px;
+}
+
+input {
+    display: block;
+    width: 100%;
+}
