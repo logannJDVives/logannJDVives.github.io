@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>demo</title>
+</head>
+<body>
+<script type="text/javascript" charset="utf-8"
+        src="scripts/code.js"></script>
+
+<form>
+    <label for="txtName">Name*:</label>
+    <input type="number" id="txtName" placeholder="name" required>
+
+    <label for="txt">Password:</label>
+    <input type="password" id="txt" placeholder="password" required>
+
+    <label for="txtPhone">gsm</label>
+    <input type="number" id="txtPhone" placeholder="phone" required pattern="04[0-9] {2}\/[0-9]{6}">
+    <!--[] staat voor een range
+    {} staat voor een frequentie (die range moet bvb 3 keer voorkomen)*/
+    -->
+    <label for="txtPostalCode">Postal Code:</label>
+    <input type="number" id="txtPostalCode" placeholder="postal code" required pattern="[1-9]{1}\/[0-9]{4}">
+
+    <label for="txtUrl">url</label>
+    <input type="url" id="txtUrl" placeholder="paste_url_here" required>
+
+    <input type="submit" value="send">
+
+
+
+</form>
+</body>
+</html> 
