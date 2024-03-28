@@ -29,9 +29,6 @@ const saveColor = () => {
     const green = document.getElementById("green").value;
     const blue = document.getElementById("blue").value;
 
-    const swatchContainer = document.createElement('div');
-    swatchContainer.classList.add('swatch-container');
-
     const swatch = document.createElement('div');
     swatch.classList.add('swatch');
     swatch.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
@@ -46,14 +43,13 @@ const saveColor = () => {
     deleteButton.textContent = 'X';
     deleteButton.classList.add('delete-button');
     deleteButton.addEventListener('click', () => {
-        swatchContainer.remove();
+        swatch.remove();
         saveColorsToLocalStorage();
     });
 
-    swatchContainer.appendChild(swatch);
-    swatchContainer.appendChild(deleteButton);
-
-    document.body.insertBefore(swatchContainer, document.querySelector('.picker').nextSibling);
+    swatch.appendChild(deleteButton);
+    const picker = document.querySelector('.picker');
+    picker.appendChild(swatch);
 
     saveColorsToLocalStorage();
 }
@@ -73,35 +69,21 @@ const loadSavedColors = () => {
     const savedColors = JSON.parse(localStorage.getItem('savedColors')) || [];
 
     savedColors.forEach(color => {
-        const swatchContainer = document.createElement('div');
-        swatchContainer.classList.add('swatch-container');
-
         const swatch = document.createElement('div');
         swatch.classList.add('swatch');
         swatch.style.backgroundColor = color;
-
-        swatch.addEventListener('click', () => {
-            const rgb = color.substring(4, color.length - 1)
-                .replace(/ /g, '')
-                .split(',');
-            document.getElementById('red').value = rgb[0];
-            document.getElementById('green').value = rgb[1];
-            document.getElementById('blue').value = rgb[2];
-            updateDisplay();
-        });
 
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'X';
         deleteButton.classList.add('delete-button');
         deleteButton.addEventListener('click', () => {
-            swatchContainer.remove();
+            swatch.remove();
             saveColorsToLocalStorage();
         });
 
-        swatchContainer.appendChild(swatch);
-        swatchContainer.appendChild(deleteButton);
-
-        document.body.insertBefore(swatchContainer, document.querySelector('.picker').nextSibling);
+        swatch.appendChild(deleteButton);
+        const picker = document.querySelector('.picker');
+        picker.appendChild(swatch);
     });
 }
 
